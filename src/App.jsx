@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  // 👇 Only this line changed: now starts in dark mode
+  const [darkMode, setDarkMode] = useState(true);
   const [activeCard, setActiveCard] = useState(null);
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
@@ -71,7 +72,7 @@ export default function App() {
       paragraph:
         "I'm a Computer Science student with a deep passion for web & app development, tech, and problem-solving. I specialize in crafting innovative and scalable solutions, leveraging my expertise in Figma, Java, JavaScript, Tailwind CSS, Next.js, React, React Native, MySQL. Beyond coding, I thrive in team collaborations, brainstorming ideas, and turning concepts into reality. My mission is to build impactful solutions that drive change, not just work a job.",
       contact: [],
-    }
+    },
   ];
 
   const fadeIn = {
@@ -103,7 +104,6 @@ export default function App() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        {/* Moving glassy orbs */}
         <motion.div
           className="absolute top-32 left-20 w-72 h-72 bg-gradient-to-r from-[#51738c] to-blue-400 rounded-full blur-3xl opacity-30"
           animate={{ x: [0, 60, -40, 0], y: [0, 30, -50, 0] }}
@@ -127,7 +127,6 @@ export default function App() {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeIn}
           >
-            {/* 🌟 Section Glow Border */}
             <motion.div
               className="absolute inset-0 rounded-3xl blur-2xl bg-gradient-to-r from-[#51738c]/40 to-blue-400/40 opacity-0"
               whileInView={{ opacity: [0, 0.4, 0] }}
@@ -163,7 +162,6 @@ export default function App() {
               </div>
             )}
 
-            {/* Core Skills */}
             {s.columns && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {s.columns.map((col) => (
@@ -183,7 +181,6 @@ export default function App() {
               </div>
             )}
 
-            {/* Technical Stack */}
             {s.items && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 {s.items.map((item) => (
@@ -203,7 +200,6 @@ export default function App() {
               </div>
             )}
 
-            {/* Education & Certifications */}
             {s.cards && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 {s.cards.map((c, idx) => (
@@ -223,7 +219,6 @@ export default function App() {
               </div>
             )}
 
-            {/* About / Contact */}
             {s.paragraph && (
               <p className="mt-6 text-center max-w-3xl mx-auto text-lg italic relative z-10">
                 {s.paragraph}
@@ -243,7 +238,6 @@ export default function App() {
         ))}
       </div>
 
-      {/* Popup Cards */}
       {activeCard && (
         <motion.div
           className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
@@ -259,7 +253,6 @@ export default function App() {
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="bg-white/20 dark:bg-gray-800/50 backdrop-blur-2xl border border-white/20 p-8 rounded-2xl shadow-2xl text-center cursor-default max-w-md w-full relative"
           >
-            {/* Inner glow */}
             <motion.div
               className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#51738c]/30 to-blue-400/30 blur-2xl"
               animate={{ opacity: [0.2, 0.6, 0.2] }}
@@ -301,7 +294,6 @@ export default function App() {
         </motion.div>
       )}
 
-      {/* Footer */}
       <footer className="py-10 text-center text-sm opacity-70 relative z-10">
         © {new Date().getFullYear()} Hariom Tavar. All rights reserved.
       </footer>
