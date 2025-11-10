@@ -285,8 +285,8 @@ export default function App() {
                   📞 Personal Details
                 </h2>
                 <p className="mb-2">📍 Indore, Madhya Pradesh</p>
-                <p className="mb-2">📞 +91 98765 43210</p>
-                <p className="mb-2">✉️ hariomtavar04@gmail.com</p>
+                <p className="mb-2">📞 +91 97535 64070</p>
+                <p className="mb-2">✉️ hariomtavar7@gmail.com</p>
                 <p>🎓 B.Tech (CSE) — Shri Vaishnav Vidyapeeth Vishwavidyalaya</p>
               </>
             )}
@@ -300,3 +300,5 @@ export default function App() {
     </div>
   );
 }
+
+
