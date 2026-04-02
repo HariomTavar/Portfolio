@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #E5E7EB;
+  background: #0A0F1C;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(59, 130, 246, 0.08), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(250, 204, 21, 0.06), transparent 24%),
+    #0A0F1C;
+}
+
+/* Light theme utilities */
+.primary-gradient {
+  background-image: linear-gradient(135deg, #FACC15, #EAB308);
+}
+
+.gradient-shift {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.24), rgba(250, 204, 21, 0.18));
+  background-size: 220% 220%;
+  animation: gradientShift 12s ease infinite;
+}
+
+.hero-mesh {
+  background-image:
+    radial-gradient(circle at 15% 25%, rgba(59, 130, 246, 0.35) 0%, transparent 45%),
+    radial-gradient(circle at 80% 18%, rgba(250, 204, 21, 0.2) 0%, transparent 42%),
+    radial-gradient(circle at 58% 82%, rgba(59, 130, 246, 0.2) 0%, transparent 40%);
+  animation: meshDrift 18s ease-in-out infinite;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(156, 163, 175, 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(156, 163, 175, 0.13) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at 55% 45%, black 28%, transparent 75%);
+}
+
+.hero-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 50px rgba(2, 6, 23, 0.45);
+}
+
+.glass-surface {
+  background: rgba(17, 24, 39, 0.92);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 50px rgba(2, 6, 23, 0.35);
+}
+
+.section-glow {
+  background-image:
+    radial-gradient(circle at 12% 22%, rgba(59, 130, 246, 0.08), transparent 30%),
+    radial-gradient(circle at 82% 68%, rgba(250, 204, 21, 0.06), transparent 28%);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.4);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  box-shadow: 0 10px 38px rgba(250, 204, 21, 0.2);
+  border-color: #EAB308;
+}
+
+/* Subtle background animation */
+@keyframes blobDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(30px, -20px, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.animated-blob {
+  animation: blobDrift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes meshDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(10px, -8px, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
