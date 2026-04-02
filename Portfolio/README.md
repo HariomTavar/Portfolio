@@ -1,16 +1,94 @@
-# React + Vite
+# Hariom Tavar Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern, premium personal portfolio website built with React, Vite, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio presents Hariom Tavar as a Full Stack Developer with a clean, dark, product-inspired interface. The site focuses on strong hierarchy, smooth motion, premium glass surfaces, and a polished single-page experience designed to feel professional and modern.
 
-## React Compiler
+## Live Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Premium dark visual system with layered depth and glow accents
+- Animated hero section with cinematic motion and a sliding tech ticker
+- Clean project showcase with featured and case-study style cards
+- Skills, journey, and contact sections built for recruiter clarity
+- Fully responsive layout with smooth scrolling and subtle micro-interactions
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Radix UI Slot
+
+## Setup
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+- src/components: reusable UI primitives and motion helpers
+- src/components/ui: shadcn-style utility components used by the hero
+- src/data: portfolio content and interaction copy
+- src/sections: page sections such as hero, about, projects, skills, journey, and contact
+
+## Key Features
+
+- Animated hero with strong visual impact
+- Dark theme with controlled gold and blue accents
+- Data-driven content architecture
+- Smooth section reveal animations
+- Premium cards, buttons, and timeline styling
+- Mobile-friendly navigation and layout
+
+## Scripts
+
+- npm run dev: start the local dev server
+- npm run build: create a production build
+- npm run preview: preview the production build locally
+- npm run lint: run ESLint
+
+## Author
+
+- Name: Hariom Tavar
+- Role: Full Stack Developer | System Builder
+- GitHub: https://github.com/HariomTavar
+- LinkedIn: https://www.linkedin.com/in/hariom-tavar-065685268/
+
+## Featured Project
+
+Veynor - Structured Learning & Consistency Platform
+
+Live: https://694c040387b1cc5298218430--veynor.netlify.app/
+
+## Contact
+
+Email: hariomtavar@email.com
+
+## License
+
+This project is open for personal portfolio use and review.
