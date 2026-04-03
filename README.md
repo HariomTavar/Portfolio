@@ -2,7 +2,7 @@
 This portfolio presents Hariom Tavar as a Full Stack Developer with a clean, dark, product-inspired interface. The site focuses on strong hierarchy, smooth motion, premium glass surfaces, and a polished single-page experience designed to feel professional and modern.
 # 🚀 Live Portfolio
 
-🔗 https://your-portfolio-link.netlify.app/
+🔗 https://69cf4d864d902b27a3932691--portofoliohariomtavar.netlify.app/
 
 ---
 
