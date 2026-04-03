@@ -87,7 +87,6 @@ Live: https://694c040387b1cc5298218430--veynor.netlify.app/
 
 ## Contact
 
-Email: hariomtavar7@email.com
 
 ## License
 
